@@ -23,7 +23,7 @@ jobs:
     - name: Build Docker image
       run: |
         echo "🐳 Building Docker image..."
-        docker build -t demo-app:${{ github.event.inputs.tag || 'latest' }} .
+        docker build -t demo-app:${{ github.event.inputs.tagsss || 'latest' }} .
         echo "✅ Docker image built successfully!"
         
     - name: List Docker images
